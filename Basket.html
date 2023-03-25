@@ -11,10 +11,13 @@
     <script src="options.js"></script>
     <script src="options.js"></script>
     <script>
-        var storedLayeredArray = JSON.parse(sessionStorage.getItem("Orders"));
-        document.getElementById('test').innerHTML = storedLayeredArray[0][0];
+        var Orders = JSON.parse(sessionStorage.getItem("Orders"));
+        console.log(storedLayeredArray[0][0]); // 1
+        console.log(storedLayeredArray[0][1]); // 5
+        console.log(storedLayeredArray[0][2]); // 9
+        document.getElementById('test').innerHTML = Orders[0][0];
     </script>
-    
+
     <a href="index.html">Home</a>
 </body>
 
