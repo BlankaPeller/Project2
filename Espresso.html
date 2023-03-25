@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Brewed</title>
+</head>
+
+<body>
+  <a href="index.html">Home</a>
+
+  <h2>Size</h2>
+  <input type="radio" name="size" value="normale" checked>Normale<br>
+  <input type="radio" name="size" value="grande">Grande<br>
+  <input type="radio" name="size" value="gigante">Gigante<br>
+
+  <h2>Milk</h2>
+  <input type="radio" name="milk" value="whole" checked>Whole<br>
+  <input type="radio" name="milk" value="2%">2%<br>
+  <input type="radio" name="milk" value="skim">Skim<br>
+  <input type="radio" name="milk" value="lactose free">Lactose Free<br>
+  <input type="radio" name="milk" value="almond">Almond<br>
+  <input type="radio" name="milk" value="oat">Oat<br>
+
+  <h2>Sweetener</h2>
+  <input type="radio" name="sweetener" value="sugar" checked>Sugar<br>
+  <input type="radio" name="sweetener" value="artificial">Artificial<br>
+  <input type="radio" name="sweetener" value="honey">Honey<br>
+
+  <input type="range" min="0" max="5" value="1" id="sweetamount">
+  <p>Amount: <span id="value"></span></p>
+
+  <h2>Temperature</h2>
+  <input type="radio" name="temperature" value="iced" checked>Iced<br>
+  <input type="radio" name="temperature" value="warm">Warm<br>
+  <input type="radio" name="temperature" value="hot">Hot<br>
+
+  <h2>Extra Shots</h2>
+  <input type="checkbox" id="decaf" name="decaf" value="decaf"><label for="checkbox">Decaf</label>
+
+  <h2>Add-Ons</h2>
+  <input type="checkbox" id="whipped cream" name="whipped cream" value="whipped cream"><label for="checkbox">Whipped Cream</label>
+  <input type="checkbox" id="cinnamon" name="cinnamon" value="cinnamon"><label for="checkbox">Cinnamon</label>
+  <input type="checkbox" id="marshmallows" name="marshmallows" value="marshmallows"><label for="checkbox">Marshmallows</label>
+  <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="chocolate flavor"><label for="checkbox">Chocolate Flavor</label>
+  <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="vanilla flavor"><label for="checkbox">Vanilla Flavor</label>
+  <input type="checkbox" id="caramel flavor" name="caramel flavor" value="caramel flavor"><label for="checkbox">Caramel Flavor</label>
+  <input type="number" min="0" max="10" value="5" id="number-selector">
+
+  <button onclick="getValue()">Add to Basket</button>
+
+  <p id="result"></p>
+<script src="options.js"></script>
+</body>
+
+</html>

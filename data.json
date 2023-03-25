@@ -1,0 +1,24 @@
+{
+    "title": "Menu",
+    "items": [
+      {
+        "name": "Brewed",
+        "description": "Our traditionally brewed roasted coffee",
+        "price": 1.50,
+        "image": "images/brewed.png" 
+      },
+      {
+        "name": "Espresso",
+        "description": "A strong, flavorful drink from high quality beans",
+        "price": 1.75,
+        "image": "'images/espresso.png'"
+      },
+      {
+        "name": "Cappuccino",
+        "description": "A smooth and creamy delicacy",
+        "price": 2.00,
+        "image": "'images/cappuccino.png'"
+      }
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basket</title>
+</head>
+
+<body>
+    <h1 id="title">Basket</h1>
+    <p id="test"></p>
+    <script src="options.js"></script>
+    <script src="options.js"></script>
+    <script>
+        var storedLayeredArray = JSON.parse(sessionStorage.getItem("Orders"));
+        document.getElementById('test').innerHTML = storedLayeredArray[0][0];
+    </script>
+    
+    <a href="index.html">Home</a>
+</body>
+
+</html>
