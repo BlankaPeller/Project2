@@ -12,9 +12,9 @@
     <script src="options.js"></script>
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
-        console.log(storedLayeredArray[0][0]); // 1
-        console.log(storedLayeredArray[0][1]); // 5
-        console.log(storedLayeredArray[0][2]); // 9
+        console.log(Orders[0][0]); // 1
+        console.log(Orders[0][1]); // 5
+        console.log(Orders[0][2]); // 9
         document.getElementById('test').innerHTML = Orders[0][0];
     </script>
 
