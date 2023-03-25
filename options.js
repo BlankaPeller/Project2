@@ -9,6 +9,7 @@ function getValue() {
     var SweetAmount = document.getElementById("sweetamount");
     var Temp = document.getElementsByName('temperature');
     var TempSelected = ""
+    var Amount = document.getElementById("amount");
 
     for (var i = 0, length = Size.length; i < length; i++) {
         if (Size[i].checked) {
@@ -34,7 +35,7 @@ function getValue() {
             break;
         }
     }
-    var order = [SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected];
+    var order = [SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected, Amount.value];
     var options = document.querySelectorAll('input[type=checkbox]:checked');
     for (var i = 0; i < options.length; i++) {
         order.push(options[i].value);
@@ -42,5 +43,4 @@ function getValue() {
     Orders.push(order);
     document.getElementById("result").innerHTML = Orders[0];
     sessionStorage.setItem("Orders", JSON.stringify(Orders));
-    var Order = JSON.parse(sessionStorage.getItem("Orders"));
 }
