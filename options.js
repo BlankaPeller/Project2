@@ -35,7 +35,7 @@ function getValue() {
             break;
         }
     }
-    var order = [SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected, Amount.value];
+    var order = [SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected];
     var options = document.querySelectorAll('input[type=checkbox]:checked');
     for (var i = 0; i < options.length; i++) {
         order.push(options[i].value);
