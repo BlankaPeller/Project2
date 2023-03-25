@@ -42,4 +42,4 @@ function getValue() {
     Orders.push(order);
     document.getElementById("result").innerHTML = Orders[0];
 }
-SessionStorage.setItem("Orders", JSON.stringify(Orders));
+sessionStorage.setItem("Orders", JSON.stringify(Orders));
