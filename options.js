@@ -44,4 +44,4 @@ function getValue() {
 }
 sessionStorage.setItem("Orders", JSON.stringify(Orders));
 var Order = JSON.parse(sessionStorage.getItem("Orders"));
-        console.log(Order[0]); 
+        console.log(Order[0][0]); 
