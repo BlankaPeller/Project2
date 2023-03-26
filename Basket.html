@@ -13,6 +13,9 @@
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
         console.log(Orders[0]); 
+        for(var i = 0; i < Orders.length; i++){
+            console.log(Orders[i]);
+        }
         document.getElementById("test").innerHTML = Orders[0][0];
     </script>
 
