@@ -1,7 +1,7 @@
 var Orders = [];
 function getValue() {
     var PageTitle = document.title;
-    var Size = document.getElementsByName('size');
+    var Size = document.getElementsByName('size'); 
     var SizeSelected = ""
     var Milk = document.getElementsByName('milk');
     var MilkSelected = ""
