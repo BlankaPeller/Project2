@@ -38,18 +38,32 @@
   <input type="checkbox" id="decaf" name="decaf" value="decaf"><label for="checkbox">Decaf</label>
 
   <h2>Add-Ons</h2>
-  <input type="checkbox" id="whipped cream" name="whipped cream" value="whipped cream"><label for="checkbox">Whipped Cream</label>
+  <input type="checkbox" id="whipped cream" name="whipped cream" value="whipped cream"><label for="checkbox">Whipped
+    Cream</label>
   <input type="checkbox" id="cinnamon" name="cinnamon" value="cinnamon"><label for="checkbox">Cinnamon</label>
-  <input type="checkbox" id="marshmallows" name="marshmallows" value="marshmallows"><label for="checkbox">Marshmallows</label>
-  <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="chocolate flavor"><label for="checkbox">Chocolate Flavor</label>
-  <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="vanilla flavor"><label for="checkbox">Vanilla Flavor</label>
-  <input type="checkbox" id="caramel flavor" name="caramel flavor" value="caramel flavor"><label for="checkbox">Caramel Flavor</label>
+  <input type="checkbox" id="marshmallows" name="marshmallows" value="marshmallows"><label
+    for="checkbox">Marshmallows</label>
+  <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="chocolate flavor"><label
+    for="checkbox">Chocolate Flavor</label>
+  <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="vanilla flavor"><label for="checkbox">Vanilla
+    Flavor</label>
+  <input type="checkbox" id="caramel flavor" name="caramel flavor" value="caramel flavor"><label for="checkbox">Caramel
+    Flavor</label>
   <input type="number" min="0" max="10" value="1" id="amount">
 
   <button onclick="getValue()">Add to Basket</button>
 
   <p id="result"></p>
-<script src="options.js"></script>
+  <script src="options.js"></script>
+  <script>
+    var slider = document.getElementById("slider");
+    var output = document.getElementById("value");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function () {
+      output.innerHTML = this.value;
+    }
+  </script>
 </body>
 
 </html>
