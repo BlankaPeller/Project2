@@ -1,3 +1,7 @@
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+}
 /* The container */
 .container {
     display: block;
