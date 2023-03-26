@@ -9,46 +9,41 @@
   <a href="index.html">Home</a>
 
   <h2>Size</h2>
-  <input type="radio" name="size" value="normale" checked>Normale<br>
-  <input type="radio" name="size" value="grande">Grande<br>
-  <input type="radio" name="size" value="gigante">Gigante<br>
+  <input type="radio" name="size" value="Normale" checked>Normale<br>
+  <input type="radio" name="size" value="Grande">Grande<br>
+  <input type="radio" name="size" value="Gigante">Gigante<br>
 
   <h2>Milk</h2>
-  <input type="radio" name="milk" value="whole" checked>Whole<br>
+  <input type="radio" name="milk" value="Whole" checked>Whole<br>
   <input type="radio" name="milk" value="2%">2%<br>
-  <input type="radio" name="milk" value="skim">Skim<br>
-  <input type="radio" name="milk" value="lactose free">Lactose Free<br>
-  <input type="radio" name="milk" value="almond">Almond<br>
-  <input type="radio" name="milk" value="oat">Oat<br>
+  <input type="radio" name="milk" value="Skim">Skim<br>
+  <input type="radio" name="milk" value="Lactose free">Lactose Free<br>
+  <input type="radio" name="milk" value="Almond">Almond<br>
+  <input type="radio" name="milk" value="Oat">Oat<br>
 
   <h2>Sweetener</h2>
-  <input type="radio" name="sweetener" value="sugar" checked>Sugar<br>
-  <input type="radio" name="sweetener" value="artificial">Artificial<br>
-  <input type="radio" name="sweetener" value="honey">Honey<br>
+  <input type="radio" name="sweetener" value="Sugar" checked>Sugar<br>
+  <input type="radio" name="sweetener" value="Artificial">Artificial<br>
+  <input type="radio" name="sweetener" value="Honey">Honey<br>
 
   <input type="range" min="0" max="5" value="1" id="sweetamount">
   <p>Amount: <span id="value"></span></p>
 
   <h2>Temperature</h2>
-  <input type="radio" name="temperature" value="iced" checked>Iced<br>
-  <input type="radio" name="temperature" value="warm">Warm<br>
-  <input type="radio" name="temperature" value="hot">Hot<br>
+  <input type="radio" name="temperature" value="Iced" checked>Iced<br>
+  <input type="radio" name="temperature" value="Warm">Warm<br>
+  <input type="radio" name="temperature" value="Hot">Hot<br>
 
-  <h2>Extra Shots</h2>
-  <input type="checkbox" id="decaf" name="decaf" value="decaf"><label for="checkbox">Decaf</label>
+  <h2>Caffeine</h2>
+  <input type="checkbox" id="decaf" name="decaf" value="Decaf"><label for="checkbox">Decaf</label>
 
   <h2>Add-Ons</h2>
-  <input type="checkbox" id="whipped cream" name="whipped cream" value="whipped cream"><label for="checkbox">Whipped
-    Cream</label>
-  <input type="checkbox" id="cinnamon" name="cinnamon" value="cinnamon"><label for="checkbox">Cinnamon</label>
-  <input type="checkbox" id="marshmallows" name="marshmallows" value="marshmallows"><label
-    for="checkbox">Marshmallows</label>
-  <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="chocolate flavor"><label
-    for="checkbox">Chocolate Flavor</label>
-  <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="vanilla flavor"><label for="checkbox">Vanilla
-    Flavor</label>
-  <input type="checkbox" id="caramel flavor" name="caramel flavor" value="caramel flavor"><label for="checkbox">Caramel
-    Flavor</label>
+  <input type="checkbox" id="whipped cream" name="whipped cream" value="Whipped cream"><label for="checkbox">Whipped Cream</label>
+  <input type="checkbox" id="cinnamon" name="cinnamon" value="Cinnamon"><label for="checkbox">Cinnamon</label>
+  <input type="checkbox" id="marshmallows" name="marshmallows" value="Marshmallows"><label for="checkbox">Marshmallows</label>
+  <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="Chocolate flavor"><label for="checkbox">Chocolate Flavor</label>
+  <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="Vanilla flavor"><label for="checkbox">Vanilla Flavor</label>
+  <input type="checkbox" id="caramel flavor" name="caramel flavor" value="Caramel flavor"><label for="checkbox">Caramel Flavor</label>
   <input type="number" min="0" max="10" value="1" id="amount">
 
   <button onclick="getValue()">Add to Basket</button>
@@ -61,7 +56,7 @@
     output.innerHTML = slider.value;
 
     slider.oninput = function () {
-      output.innerHTML = this.value;
+      output.innerHTML = this.value + " tsp";
     }
   </script>
 </body>
