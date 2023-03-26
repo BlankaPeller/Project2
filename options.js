@@ -43,5 +43,5 @@ function getValue() {
     }
     Orders.push(order);
     document.getElementById("result").innerHTML = Orders[0];
-    sessionStorage.setItem("Orders", JSON.stringify(Orders));
+    localStorage.setItem("Orders", JSON.stringify(Orders));
 }

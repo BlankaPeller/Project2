@@ -11,7 +11,7 @@
     <script src="options.js"></script>
     <script src="options.js"></script>
     <script>
-        var Orders = JSON.parse(sessionStorage.getItem("Orders"));
+        var Orders = JSON.parse(localStorage.getItem("Orders"));
         for(var i = 0; i < Orders.length; i++){
             var others = [];
             for(var j = 3; j < Orders[i].length; j++){
