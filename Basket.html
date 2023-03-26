@@ -14,12 +14,11 @@
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
         var others = [];
         for(var i = 0; i < Orders.length; i++){
-            console.log(Orders[i]);
+            console.log(Orders[i].length);
             const div = document.createElement('div');
             const h2 = document.createElement('h2');
             const h3 = document.createElement('h3');
             const p = document.createElement('p');
-            console.log(Orders[i].length);
 
             h2.textContent = Orders[i][1] + " " + Orders[i][0];
             h3.textContent = Orders[i][2];
