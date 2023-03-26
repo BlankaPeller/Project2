@@ -1,5 +1,6 @@
 var Orders = [];
 function getValue() {
+    var PageTitle = document.title;
     var Size = document.getElementsByName('size');
     var SizeSelected = ""
     var Milk = document.getElementsByName('milk');
@@ -35,7 +36,7 @@ function getValue() {
             break;
         }
     }
-    var order = [SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected, Amount.value];
+    var order = [PageTitle, SizeSelected, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected, Amount.value];
     var options = document.querySelectorAll('input[type=checkbox]:checked');
     for (var i = 0; i < options.length; i++) {
         order.push(options[i].value);
