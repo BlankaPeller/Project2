@@ -21,7 +21,9 @@
             const h3 = document.createElement('h3');
             const p = document.createElement('p');
 
-            
+            for(var j = 3; Orders[i].length; j++){
+                others.push(Orders[i]);
+            }
 
             h2.textContent = Orders[i][1] + " " + Orders[i][0];
             h3.textContent = Orders[i][2];
