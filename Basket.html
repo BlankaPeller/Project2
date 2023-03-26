@@ -12,8 +12,8 @@
     <script src="options.js"></script>
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
-        var others = [];
         for(var i = 0; i < Orders.length; i++){
+            var others = [];
             for(var j = 3; j < Orders[i].length; j++){
                 others.push(Orders[i][j]);
             }
