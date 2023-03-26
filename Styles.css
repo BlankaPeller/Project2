@@ -36,6 +36,7 @@ label, input {
     width: 70px;
     background-color: #E8E8E8;
     border-radius: 30%;
+    margin-bottom: 20px;
   }
   
   /* On mouse-over, add a grey background color */
