@@ -9,7 +9,6 @@
     <h1 id="title">Basket</h1>
     <div id="items"></div>
     <script src="options.js"></script>
-    <script src="options.js"></script>
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
         for(var i = 0; i < Orders.length; i++){
@@ -22,14 +21,18 @@
             const h2 = document.createElement('h2');
             const h3 = document.createElement('h3');
             const p = document.createElement('p');
+            const img = document.createElement('img');
 
             h2.textContent = Orders[i][1] + " " + Orders[i][0];
             h3.textContent = Orders[i][2];
             p.textContent = others.join(", ");
+            img.src = "images/" + Orders[i][0] + ".png";
 
+            div.appendChild(img);
             div.appendChild(h2);
             div.appendChild(h3);
             div.appendChild(p);
+            
 
             document.getElementById('items').appendChild(div);
         }
