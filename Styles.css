@@ -20,7 +20,7 @@ label, input {
     -ms-user-select: none;
     user-select: none;
     margin-bottom: 120px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
   
   /* Hide the browser's default radio button */
@@ -37,13 +37,13 @@ label, input {
   /* Create a custom radio button */
   .checkmark {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -26%;
+    left: -5%;
     height: 100px;
     width: 100px;
     background-color: #E8E8E8;
     border-radius: 30%;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   
   /* On mouse-over, add a grey background color */
