@@ -19,7 +19,7 @@ label, input {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     margin-left: 150px;
   }
   
@@ -37,8 +37,8 @@ label, input {
   /* Create a custom radio button */
   .checkmark {
     position: absolute;
-    top: -26%;
-    left: -5%;
+    top: -100%;
+    left: -10%;
     height: 100px;
     width: 100px;
     background-color: #E8E8E8;
