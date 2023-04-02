@@ -10,115 +10,116 @@
 </head>
 
 <body>
-  <a href="index.html">Home</a>
+  <a href="index.html" class = "exit">╳</a>
   <h1>Espresso</h1>
 
   <h2>Size</h2>
-  <label class="container">One
-    <input type="radio" name="size" value="Normale" checked>Normale<br>
+  <label class="container">
+    <input type="radio" name="size" value="Normale" checked><label for="radio">Normale</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="size" value="Grande">Grande<br>
+  <label class="container">
+    <input type="radio" name="size" value="Grande"><label for="radio">Grande</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="size" value="Gigante">Gigante<br>
+  <label class="container">
+    <input type="radio" name="size" value="Gigante"><label for="radio">Gigante</label><br>
     <span class="checkmark"></span>
   </label>
 
   <h2>Milk</h2>
-  <label class="container">One
-    <input type="radio" name="milk" value="Whole" checked>Whole<br>
+  <label class="container">
+    <input type="radio" name="milk" value="Whole" checked><label for="radio">Whole</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="milk" value="2%">2%<br>
+  <label class="container">
+    <input type="radio" name="milk" value="2%"><label for="radio">2%</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="milk" value="Skim">Skim<br>
+  <label class="container">
+    <input type="radio" name="milk" value="Skim"><label for="radio">Skim</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="milk" value="Lactose free">Lactose Free<br>
+  <label class="container">
+    <input type="radio" name="milk" value="Lactose free"><label for="radio">Lactose Free</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="milk" value="Almond">Almond<br>
+  <label class="container">
+    <input type="radio" name="milk" value="Almond"><label for="radio">Almond</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="milk" value="Oat">Oat<br>
+  <label class="container">
+    <input type="radio" name="milk" value="Oat"><label for="radio">Oat</label><br>
     <span class="checkmark"></span>
   </label>
 
   <h2>Sweetener</h2>
-  <label class="container">One
-    <input type="radio" name="sweetener" value="Sugar" checked>Sugar<br>
+  <label class="container">
+    <input type="radio" name="sweetener" value="Sugar" checked><label for="radio">Sugar</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="sweetener" value="Artificial">Artificial<br>
+  <label class="container">
+    <input type="radio" name="sweetener" value="Artificial"><label for="radio">Artificial</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="sweetener" value="Honey">Honey<br>
+  <label class="container">
+    <input type="radio" name="sweetener" value="Honey"><label for="radio">Honey</label><br>
     <span class="checkmark"></span>
   </label>
 
-  <input type="range" min="0" max="5" value="1" id="sweetamount">
+  <input type="range" min="0" max="5" value="1" id="sweetamount" class="slider">
   <p>Amount: <span id="value"></span></p>
 
   <h2>Temperature</h2>
-  <label class="container">One
-    <input type="radio" name="temperature" value="Iced" checked>Iced<br>
+  <label class="container">
+    <input type="radio" name="temperature" value="Iced" checked><label for="radio">Iced</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="temperature" value="Warm">Warm<br>
+  <label class="container">
+    <input type="radio" name="temperature" value="Warm"><label for="radio">Warm</label><br>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
-    <input type="radio" name="temperature" value="Hot">Hot<br>
+  <label class="container">
+    <input type="radio" name="temperature" value="Hot"><label for="radio">Hot</label><br>
     <span class="checkmark"></span>
   </label>
 
   <h2>Caffeine</h2>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="decaf" name="decaf" value="Decaf"><label for="checkbox">Decaf</label>
     <span class="checkmark"></span>
   </label>
 
   <h2>Add-Ons</h2>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="whipped cream" name="whipped cream" value="Whipped cream"><label for="checkbox">Whipped Cream</label>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="cinnamon" name="cinnamon" value="Cinnamon"><label for="checkbox">Cinnamon</label>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="marshmallows" name="marshmallows" value="Marshmallows"><label for="checkbox">Marshmallows</label>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="chocolate flavor" name="chocolate flavor" value="Chocolate flavor"><label for="checkbox">Chocolate Flavor</label>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="vanilla flavor" name="vanilla flavor" value="Vanilla flavor"><label for="checkbox">Vanilla Flavor</label>
     <span class="checkmark"></span>
   </label>
-  <label class="container">One
+  <label class="container">
     <input type="checkbox" id="caramel flavor" name="caramel flavor" value="Caramel flavor"><label for="checkbox">Caramel Flavor</label>
     <span class="checkmark"></span>
   </label>
   <br>
-  <input type="number" min="0" max="10" value="1" id="amount">
+  <input type="number" min="0" max="10" value="1" id="amount"><br>
 
-  <button onclick="getValue()">Add to Basket</button>
+  <button onclick="getValue()" class = "menuButton"><a href = "Index.html" >Add to Basket</a></button>
+  <div class = "space"></div>
 
   <p id="result"></p>
   <script src="options.js"></script>

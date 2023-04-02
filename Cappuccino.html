@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <a href="index.html">Home</a>
+  <a href="index.html" class = "exit">╳</a>
   <h1>Cappuccino</h1>
 
   <h2>Size</h2>
@@ -116,9 +116,10 @@
     <span class="checkmark"></span>
   </label>
   <br>
-  <input type="number" min="0" max="10" value="1" id="amount">
+  <input type="number" min="0" max="10" value="1" id="amount"><br>
 
-  <button onclick="getValue()">Add to Basket</button>
+  <button onclick="getValue()" class = "menuButton"><a href = "Index.html" >Add to Basket</a></button>
+  <div class = "space"></div>
 
   <p id="result"></p>
   <script src="options.js"></script>

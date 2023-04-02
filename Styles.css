@@ -1,99 +1,172 @@
-h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4rem;
-    margin-left: 100px;
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem;
+  margin-left: 100px;
 }
 
-label, input, #value, p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
-    margin-left: 100px;
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4rem;
+  margin-left: 100px;
+}
+
+label,
+input,
+#value,
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-left: 100px;
+}
+
+.exit{
+  position: absolute;
+  top: 2.5%;
+  left: 85%;
+  font-size: 4em;
+}
+
+.exit a:link, a:visited{
+  color: #000;
 }
 
 /* The container */
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-bottom: 90px;
-    margin-left: 100px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 90px;
+  margin-left: 100px;
 }
 
 /* Hide the browser's default radio button */
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-    position: absolute;
-    top: -50%;
-    left: 0;
-    height: 100px;
-    width: 100px;
-    background-color: #E8E8E8;
-    border-radius: 30%;
-    margin-bottom: 50px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background-color: #E8E8E8;
+  border-radius: 30%;
+  margin-bottom: 50px;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input~.checkmark {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
 .container input:checked~.checkmark {
-    background-color: #FFDFD9;
+  background-color: #FFDFD9;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+  content: "";
+  position: absolute;
+  display: none;
 }
 
 /* Show the indicator (dot/circle) when checked */
 .container input:checked~.checkmark:after {
-    display: block;
+  display: block;
 }
 
 input {
-    width: 100px;
-    height: 20px;
+  width: 100px;
+  height: 20px;
 }
 
 .slider {
-    -webkit-appearance: none;
-    width: 50%;
-    height: 25px;
-    background: #E8E8E8;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #FFDFD9;
-    cursor: pointer;
-  }
-  
-  .slider::-moz-range-thumb {
-    width: 25px;
-    height: 25px;
-    background: #FFDFD9;
-    cursor: pointer;
-  }
+  -webkit-appearance: none;
+  width: 50%;
+  height: 25px;
+  background: #E8E8E8;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #FFDFD9;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #FFDFD9;
+  cursor: pointer;
+}
+
+#amount {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: 45px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 30%;
+  background-color: #FFDFD9;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-left: 100px;
+}
+
+.menuButton {
+  background-color: #3E0500;
+  border-radius: 50px;
+  border-width: 0;
+  height: 105px;
+  cursor: pointer;
+  margin: 0;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+}
+
+.menuButton a:link,
+.menuButton a:visited {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-left: 100px;
+  color: #fff;
+  margin: 35px;
+  text-decoration: none;
+}
+
+.space{
+  height: 200px;
+}
