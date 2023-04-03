@@ -47,11 +47,11 @@ a:visited {
 }
 /*STYLING FOR LANDING PAGE*/
 .landing {
-  background: linear-gradient(#68332e, #3E0500);
+  background: linear-gradient(#3E0500, #68332e);
   width: 100vw;
   height: 100vh;
 }
-.menuButton {
+.indexButton {
   background-color: #ffffff;
   border-radius: 50px;
   border-width: 0;
@@ -74,14 +74,26 @@ a:visited {
   margin-top: 100px;
 }
 
-.menuButton a:link,
-.menuButton a:visited {
+.indexButton a:link,
+.indexButton a:visited {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-left: 100px;
   color: #3E0500;
   margin: 35px;
   text-decoration: none;
+}
+
+.indexh1{
+  font-family: 'Poiret One', cursive;
+  font-size: 7rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+
+.indeximg{
+  width: 200px;
 }
 
 /*STYLING FOR DETAILS PAGES*/
