@@ -16,7 +16,7 @@
     <script src="options.js"></script>
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
-        if (Orders.length == null) {
+        if (Orders == null) {
             const div = document.createElement('div');
             const p = document.createElement('p');
 
