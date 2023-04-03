@@ -83,6 +83,7 @@ a:visited {
   color: #3E0500;
   margin: 35px;
   text-decoration: none;
+  line-height:100px;
 }
 
 .indexh1{
@@ -234,6 +235,7 @@ input {
   color: #fff;
   margin: 35px;
   text-decoration: none;
+  line-height:100px;
 }
 
 /*STYLING FOR MENU PAGE*/

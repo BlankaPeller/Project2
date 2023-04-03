@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
 
 <head>
-  <title>Dynamic Content from JSON</title>
+  <meta charset="UTF-8">
+  <title>Coffee App - Menu</title>
   <link rel="stylesheet" href="Styles.css" type="text/css">
+  <!-- These are just fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1 id="title"></h1>
+  <h1 id="title">Menu</h1>
   <div id="items"></div>
 
   <script src="options.js"></script>
@@ -19,7 +21,6 @@
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
-        document.getElementById('title').textContent = data.title;
 
         // Loop through the items and create HTML elements from JSON data
         data.items.forEach(item => {
@@ -49,7 +50,7 @@
         console.error('Error fetching data:', error);
       });
   </script>
-  <button class="menuButton"><a href="Basket.html">Basket</a></button>
+  <div class="menuButton"><a href="Basket.html">Basket</a></div>
   <div class="space"></div>
 
 </body>
