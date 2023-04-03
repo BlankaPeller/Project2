@@ -167,4 +167,6 @@ input {
 /*STYLING FOR MENU PAGE*/
 .item{
   background-color: #FFDFD9;
+  border-radius: 50px;
+  text-align: center;
 }

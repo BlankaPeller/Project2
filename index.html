@@ -35,10 +35,10 @@
 
           div.addEventListener('click', function () {window.location.href = "" + item.name + ".html";});
 
+          img.src = "images/" + item.name + ".png";
           h2.textContent = item.name;
           p1.textContent = item.description;
           p2.textContent = item.price;
-          img.src = "images/" + item.name + ".png";
 
           div.appendChild(h2);
           div.appendChild(p1);
