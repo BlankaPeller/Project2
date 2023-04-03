@@ -4,6 +4,7 @@
 <head>
     <title>Basket</title>
     <link rel="stylesheet" href="Styles.css" type="text/css">
+    <!-- These are just fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap"
@@ -16,6 +17,7 @@
     <div id="orders"></div>
     <script src="options.js"></script>
     <script>
+        //Checks if anything has been ordered yet
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
         if (Orders == null) {
             const p = document.createElement('p');
@@ -26,6 +28,7 @@
             document.getElementById('orders').appendChild(p);
         }
         else {
+        //Loads in data from Session data
             for (var i = 0; i < Orders.length; i++) {
                 var others = [];
                 for (var j = 3; j < Orders[i].length; j++) {

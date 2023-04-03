@@ -1,5 +1,6 @@
 var Orders = [];
 function getValue() {
+    //Creates variables for all input from forms
     var PageTitle = document.title;
     var Size = document.getElementsByName('size'); 
     var SizeSelected = ""
@@ -12,6 +13,7 @@ function getValue() {
     var TempSelected = ""
     var Amount = document.getElementById("amount");
 
+    //Checks which input forms are selected
     for (var i = 0, length = Size.length; i < length; i++) {
         if (Size[i].checked) {
             SizeSelected = Size[i].value;
@@ -36,6 +38,7 @@ function getValue() {
             break;
         }
     }
+    //Adds all data to Session Storage
     var order = [PageTitle, SizeSelected, Amount.value, MilkSelected, SweetenerSelected, SweetAmount.value, TempSelected];
     var options = document.querySelectorAll('input[type=checkbox]:checked');
     for (var i = 0; i < options.length; i++) {
