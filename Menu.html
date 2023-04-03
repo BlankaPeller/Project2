@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dynamic Content from JSON</title>
+  <link rel="stylesheet" href="Styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap"rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title"></h1>
+  <p id="description"></p>
+  <div id="items"></div>
+
+  <script src="options.js"></script>
+  <script>
+    // Fetch the JSON file
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Update the title and description
+        document.getElementById('title').textContent = data.title;
+        document.getElementById('description').textContent = data.description;
+
+        // Loop through the items and create HTML elements
+        data.items.forEach(item => {
+          const div = document.createElement('div');
+          div.classList.add("item");
+          const img = document.createElement('img');
+          const h2 = document.createElement('h2');
+          const p1 = document.createElement('p');
+          const p2 = document.createElement('p');
+
+          div.addEventListener('click', function () { window.location.href = "" + item.name + ".html"; });
+
+          img.src = "images/" + item.name + ".png";
+          h2.textContent = item.name;
+          p1.textContent = item.description;
+          p2.textContent = item.price;
+
+          div.appendChild(img);
+          div.appendChild(h2);
+          div.appendChild(p1);
+          div.appendChild(p2);
+
+          document.getElementById('items').appendChild(div);
+        });
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  </script>
+  <button class="menuButton"><a href="Basket.html">Basket</a></button>
+  <div class="space"></div>
+
+</body>
+
+</html>
