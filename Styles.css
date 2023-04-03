@@ -223,6 +223,5 @@ input {
 }
 
 .noneYet{
-  text-align: center;
-  font-size: 3em;
+  padding-left: 130px;
 }

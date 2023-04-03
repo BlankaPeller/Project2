@@ -17,14 +17,12 @@
     <script>
         var Orders = JSON.parse(sessionStorage.getItem("Orders"));
         if (Orders == null) {
-            const div = document.createElement('div');
             const p = document.createElement('p');
             p.classList.add("noneYet");
 
             p.textContent = "There is nothing in the basket yet";
 
-            div.appendChild(p);
-            document.getElementById('orders').appendChild(div);
+            document.getElementById('orders').appendChild(p);
         }
         else {
             for (var i = 0; i < Orders.length; i++) {
