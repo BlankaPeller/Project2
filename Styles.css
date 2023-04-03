@@ -1,8 +1,16 @@
 /* GENERAL STYLING*/
+body{
+  margin: 0 auto;
+}
 h1{
   font-family: 'Poiret One', cursive;
   font-size: 5rem;
-  margin-left: 100px;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color:#3E0500;
+  width: 100%;
+  text-align: center;
+  color: #fff;
 }
 
 h2 {
