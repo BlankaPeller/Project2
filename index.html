@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="Styles.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300&display=swap"rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
           const p1 = document.createElement('p');
           const p2 = document.createElement('p');
 
-          div.addEventListener('click', function () {window.location.href = "" + item.name + ".html";});
+          div.addEventListener('click', function () { window.location.href = "" + item.name + ".html"; });
 
           img.src = "images/" + item.name + ".png";
           h2.textContent = item.name;
@@ -52,8 +52,9 @@
         console.error('Error fetching data:', error);
       });
   </script>
-   <button class = "menuButton"><a href="Basket.html">  Basket  </a></button>
-   <div class = "space"></div>
+  <button class="menuButton"><a href="Basket.html">Basket</a></button>
+  <div class="space"></div>
 
 </body>
+
 </html>

@@ -1,12 +1,12 @@
 /* GENERAL STYLING*/
 h1{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 5rem;
   margin-left: 100px;
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poiret One', cursive;
   font-size: 4rem;
   margin-left: 100px;
 }
@@ -138,6 +138,7 @@ input {
   border-radius: 50px;
   border-width: 0;
   height: 105px;
+  width: 300px;
   cursor: pointer;
   margin: 0;
   text-align: center;
@@ -210,5 +211,5 @@ input {
 }
 #orders div p{
  margin-left: 50px;
-  width: 400px;
+  width: 700px;
 }
