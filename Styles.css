@@ -221,3 +221,8 @@ input {
  margin-left: 50px;
   width: 700px;
 }
+
+.noneYet{
+  text-align: center;
+  font-size: 3em;
+}
