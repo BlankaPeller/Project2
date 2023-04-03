@@ -171,8 +171,15 @@ input {
   text-align: center;
   height: 600px;
   width: 600px;
+  margin: 0 auto;
+  margin-top: 50px
 }
 .item img{
-  padding-top: 20px;
-  margin-left: 50px;
+  padding-top: 40px;
+  margin-left: 45px;
+  width: 200px;
+}
+.item h2, p{
+  margin: 0;
+  padding: 15px;
 }
